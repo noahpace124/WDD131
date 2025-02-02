@@ -9,6 +9,33 @@
 --secondary-font: Mooli, san-serif;
 }
 
+.viewer {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2em;
+}
+
+.viewer button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+.viewer img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: var(--primary-font);
     font-size: 1.2em;
@@ -24,7 +51,7 @@ header {
     flex-direction: column;
 }
 
-button {
+.menu-button {
     font-family: var(--secondary-font);
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -55,7 +82,7 @@ h2 {
     display: grid;
 }
 
-img {
+.gallery img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
@@ -71,6 +98,10 @@ footer {
     padding-left: 15%;
 }
 
+.hide {
+    display: none;
+}
+
 @media screen and (min-width: 700px) {
     .gallery {
         grid-template-columns: 1fr 1fr;
@@ -78,10 +109,17 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
+    .viewer {
+        margin: 2em;
+        top: 2em;
+        bottom: 2em;
+        left: 2em;
+        right: 2em;
+    }
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    button {
+    .menu-button {
         display: none;
     }
 }
