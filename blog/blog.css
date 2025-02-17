@@ -6,12 +6,17 @@
     --headline-font: Impact, Serif;
 }
 
+body {
+    font-family: var(--body-font);
+}
+
 header h1 {
     margin: 0 auto;
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
     color: var(--dark-color);
+    font-family: var(--headline-font);
 }
 
 nav {
@@ -52,19 +57,42 @@ main {
     margin-top: 10px;
 }
 
-.book {
+.article {
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content: center;
     justify-items: center;
     text-align: left;
     align-content: center;
+    margin: 30px;
 }
 
 .dateInfo {
-    text-align: center;
+    text-align: right;
+    padding: 10px;
+    border-right: 1px solid var(--gold-color);
+    margin-left: auto;
+}
+
+.bookInfo {
+    padding: 30px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
     color: var(--red-color);
+    font-family: var(--headline-font);
+}
+
+#filters {
+    border: 3px solid var(--gold-color);
+    margin-right: 10%;
+    margin-top: 30px;
 }
