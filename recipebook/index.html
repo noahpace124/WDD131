@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="A collection of recipes for all occasions">
+    <meta property="og:image" content="images/recipe-book.png">
+    <meta property="og:url" content="noahpace124.github.io/wdd131/recipebook/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+    <header>
+        <h1><img src="images/recipe-book.png" alt="Recipe Book Logo">Recipe Book</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Find a recipe">
+            <button type="submit">
+                <img src="images/search.svg" alt="Search">
+            </button>
+        </div>
+        <div id="bar"></div>
+    </header>
+    <main>
+        <div id="recipes">
+            <div class="recipe">
+                <img src="images/apple-crisp.jpg" alt="Apple Crisp">
+                <div class="recipe-content">
+                    <div id="tags">
+                        <div class="tag">dessert</div>
+                    </div>
+                    <h1>Apple Crisp</h1>
+                    <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">☆</span>
+                    </span>
+                    <div class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        <div class="resource">
+            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+        </div>
+    </footer>
+    <script src="recipes.js"></script>
+</body>
+</html>
