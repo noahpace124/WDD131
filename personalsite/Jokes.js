@@ -6,7 +6,6 @@ function deleteSavedJokes() {
     console.log('Saved jokes have been deleted.');
 }
 
-
 function loadJokes() {
     const savedJokes = localStorage.getItem('jokes');
     if (savedJokes) {
@@ -55,7 +54,7 @@ function getAJoke() {
     } while ((randomJoke.joke + ' --- Author: ' + randomJoke.author) === currentJokeText && jokes.length > 1);
 
     if (jokeElement) {
-        jokeElement.textContent = randomJoke.joke + ' --- Author: ' + randomJoke.author;
+        jokeElement.textContent = randomJoke.joke + ' --- Author: ' + randomJoke.author  + " --- Likes: " + randomJoke.likes;";
     } else {
         console.error('Joke element not found.');
     }
