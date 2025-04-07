@@ -54,7 +54,7 @@ function getAJoke() {
     } while ((randomJoke.joke + ' --- Author: ' + randomJoke.author) === currentJokeText && jokes.length > 1);
 
     if (jokeElement) {
-        jokeElement.textContent = randomJoke.joke + ' --- Author: ' + randomJoke.author  + " --- Likes: " + randomJoke.likes;";
+        jokeElement.textContent = randomJoke.joke + ' --- Author: ' + randomJoke.author  + " --- Likes: " + randomJoke.likes;
     } else {
         console.error('Joke element not found.');
     }
@@ -127,7 +127,10 @@ function addNewJoke() {
     console.log('New joke added:', newJoke);
 }
 
-// Load jokes when the script is loaded
-document.addEventListener('DOMContentLoaded', loadJokes);
-// Load random joke when the page is loaded
-document.addEventListener('DOMContentLoaded', getAJoke);
+// Only run these if we load into home.html
+if (window.location.pathname.endsWith('home.html')) {
+    // Load jokes when the script is loaded
+    document.addEventListener('DOMContentLoaded', loadJokes);
+    // Load random joke when the page is loaded
+    document.addEventListener('DOMContentLoaded', getAJoke);
+}
