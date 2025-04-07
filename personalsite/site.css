@@ -1,0 +1,101 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #ffc61a;
+  --secondary-color: #151002;
+  --accent1-color: gray;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "IM Fell French Canon SC";
+  --paragraph-font: Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: #151002; /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: #151002; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--accent1-color);
+  --nav-link-color: var(--secondary-color);
+  --nav-background-color: var(--primary-color);
+  --nav-hover-link-color: #ffc61a;
+  --nav-hover-background-color: var(--accent1-color);
+}
+
+body {
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+header {
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--primary-color);
+    display: flex;
+}
+
+.submitjoke {
+    float: right;
+    margin-left: auto;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submitjoke a {
+    color: var(--headline-color-on-color);
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+
+main {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: auto;
+}
+
+.facepic {
+    width: 200px;
+    height: 200px;
+    float: center;
+}
+
+button {
+    background-color: var(--accent1-color);
+    color: var(--headline-color-on-color);
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+    padding: 1em;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Noah Joke</title>
+    <link rel="stylesheet" href="site.css">
+    <script src="Jokes.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="images/logo.png" alt="Logo image of I Noah Joke site" class="logo"></a>
+        <section class="submitjoke">
+            <a href="submit.html"><h1>Submit A Joke</h1></a>
+        </section>
+    </header>
+    <main>
+        <h1>Submit a Joke</h1>
+        <form id="jokeForm" onsubmit="event.preventDefault(); addNewJoke();">
+            <label for="jokeText">Joke:</label>
+            <textarea id="jokeText" name="jokeText" rows="4" cols="50" required></textarea>
+            <br>
+            <label for="jokeAuthor">Author:</label>
+            <input type="text" id="jokeAuthor" name="jokeAuthor" required>
+            <br>
+            <button type="submit">Submit Joke</button>
+        </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
